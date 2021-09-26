@@ -16,13 +16,19 @@ Well, why not?
 Compiling
 -------
 To compile this most useful program on windows you will need to install MinGW if using make, it will probably compile with MSVC too but has not been tested.
-
+<br />
 When compiling for linux it is as simple as installing ncurses on Debian based distro it would be as follows:
+<br />
 `sudo apt-get install libncurses5-dev libncursesw5-de`
+<br />
 For arch:
+<br />
 `pacman -S ncurses`
+<br />
 Others:
+<br />
 `Refer to google :P`
+<br />
 
 You will also need to have make and gcc installed. After that you can run make
 
