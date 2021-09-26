@@ -12,7 +12,7 @@ endif
 default: helloworld
 
 helloworld: build/main.o
-	$(CC) $(CFLAGS) -o helloworld build/main.o $(TARGET)
+	$(CC) $(CFLAGS) -o HellWorldPlus build/main.o $(TARGET)
 
 build/main.o: build src/main.c
 	$(CC) $(CFLAGS) -c src/main.c -o build/main.o
