@@ -40,15 +40,14 @@ void HelloWorld() {
     
     initscr();
     start_color();
-    init_pair(1, COLOR_BLACK, COLOR_RED);
-    init_pair(2, COLOR_BLACK, COLOR_GREEN);
+    init_pair(1, COLOR_BLACK, COLOR_GREEN);
 
     cbreak();
     keypad(stdscr, true);
     noecho();
     WINDOW *editor;
     editor = newwin(1, 12, 0, 0);
-    attron(COLOR_PAIR(2));
+    attron(COLOR_PAIR(1));
     mvwprintw(editor, 0, 0, "Hello World!\n");
     refresh();
     wrefresh(editor);
