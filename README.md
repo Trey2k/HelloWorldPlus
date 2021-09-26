@@ -1,6 +1,6 @@
 
 # HelloWorldPlus
-===============
+
 **Table of contents:**
   * [Why?](#why?)
   * [Compiling](#compiling)
