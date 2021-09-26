@@ -63,8 +63,6 @@ void HelloWorld() {
 #endif
 
 int main(void) {
-    // penis
-    HelloWorld(); // stim
-    // end penis
+    HelloWorld();
     return 0;
 }
