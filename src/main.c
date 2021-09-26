@@ -53,7 +53,7 @@ void HelloWorld() {
     wrefresh(editor);
     
     int ch;
-    while((ch = getch()) != 27){
+    while((ch = getch()) != 27 && ch != 'q'){
         
     }
     endwin();
