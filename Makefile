@@ -1,22 +1,21 @@
-.POSIX:
+CC = gcc
+CFLAGS = -g -Wall
 
-include config.mk
+UNAME := $(shell uname)
 
-all: options HelloWorldPlus
+ifeq ($(UNAME), Linux)
+TARGET = -lncurses
+else
+TARGET = 
+endif
 
-options:
-	@echo HelloWorldPlus build options:
-	@echo "CFLAGS  = $(MYCFLAGS)"
-	@echo "LDFLAGS = $(MYLDFLAGS)"
-	@echo "CC      = $(CC)"
+default: helloworld
 
-HelloWorldPlus: src/main.o
-	$(CC) $(MYLDFLAGS) $< -o $@
+helloworld: build/main.o
+	$(CC) $(CFLAGS) -o HelloWorldPlus build/main.o $(TARGET)
 
-src/main.o: src/main.c
-	$(CC) $(MYCFLAGS) -c $< -o $@
+build/main.o: build src/main.c
+	$(CC) $(CFLAGS) -c src/main.c -o build/main.o
 
-clean:
-	rm -f src/main.o HelloWorldPlus
-
-.PHONY: all
+build:
+	mkdir $@
