@@ -2,7 +2,7 @@
 # HelloWorldPlus
 
 **Table of contents:**
-  * [Why?](#why?)
+  * [Why?](#why)
   * [Compiling](#compiling)
   * [How it works](#how-it-works)
   * [Contributing](#contributing)
